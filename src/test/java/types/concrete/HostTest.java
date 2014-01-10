@@ -13,7 +13,7 @@ public class HostTest extends TypeTests<Host> {
 
     @Test
     public void anInvalidHostnameYieldsAInvalidHost() throws Exception {
-        assertThat(Host.is("blarg.moc").isValid(), is(false));
+        assertThat(Host.is("blarg.moc!").isValid(), is(false));
     }
 
     @Override
